@@ -1,0 +1,412 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  padding: 70px 0 0 0;
+  background-color: #cce7c9;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navigation-header {
+  position: fixed;
+  height: 70px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #8bc484;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#check {
+  display: none;
+}
+
+.checkbtn {
+  font-size: 25px;
+  color: #173518;
+  cursor: pointer;
+  display: none;
+}
+
+.index-icon-anchor {
+  padding-left: 50px;
+}
+
+.navigation-bar {
+  padding-right: 50px;
+}
+
+.index-icon {
+  color: #173518;
+  font-size: 25px;
+}
+
+.navigation-list {
+  display: flex;
+  gap: 15px;
+}
+
+.anchor-li-navigation-list {
+  color: #173518;
+  font-weight: bold;
+}
+
+.seccion-1 {
+  width: 70%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  padding: 20px 0;
+}
+
+.acerca-de {
+  text-align: right;
+}
+
+.acerca-imagen {
+  height: 250px;
+}
+
+.acerca-imagen img {
+  height: 250px;
+}
+
+.seccion-2 {
+  display: flex;
+  overflow: hidden;
+  max-height: 800px;
+  align-items: center;
+}
+
+.seccion-2 img {
+  width: 100%;
+}
+
+.seccion-tarjetas {
+  width: 70%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.grupo-tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.tarjeta-trabajo {
+  background-color: #8bc484;
+  border-radius: 15px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 15px;
+  justify-content: center;
+}
+
+.info-tarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-tarjeta {
+  width: 90%;
+  padding-top: 15px;
+  border-radius: 10px;
+}
+
+.img-tarjeta img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.titulo-tarjeta {
+  margin-bottom: 0;
+}
+
+.parrafo-tarjeta {
+  width: 90%;
+}
+
+footer {
+  background-color: #8bc484;
+}
+
+.footer-title {
+  width: 70%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px 0;
+  color: #0f2310;
+}
+
+.footer-list {
+  width: 70%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 0 25px 0;
+}
+
+.anchor-li-footer-list {
+  color: #0f2310;
+}
+
+.formulario {
+  background-color: #f6f7f8;
+  width: 100%;
+  padding: 50px 0 0 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-row {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 70%;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"] {
+  background-color: #bdbdbd;
+  border: 0;
+  border-radius: 6px;
+  width: 95%;
+  padding: 7px;
+  font-size: 14px;
+}
+
+.form-row label {
+  margin-bottom: 3px;
+  text-align: initial;
+}
+
+.form-row textarea {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+
+  background-color: #bdbdbd;
+  border: 0;
+  border-radius: 6px;
+
+  min-height: 200px;
+  margin-bottom: 10px;
+  padding: 7px;
+  resize: none;
+
+  width: 95%;
+}
+
+.form-row button {
+  font-size: 16px;
+  font-weight: bold;
+
+  color: #ffffff;
+  background-color: #5995da;
+
+  border: none;
+  border-radius: 3px;
+
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+.form-row button:hover {
+  background-color: #76aeed;
+}
+
+.form-row button:active {
+  background-color: #407fc7;
+}
+
+/* ------------- Para Pantallas de más de 700px ------------- */
+@media only screen and (min-width: 700px) {
+  .form-row {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding-right: 120px;
+  }
+
+  .form-row input[type="text"],
+  .form-row input[type="email"] {
+    width: 50%;
+    max-width: 500px;
+    height: initial;
+  }
+
+  .form-row label {
+    text-align: right;
+    width: 120px;
+    margin-top: 7px;
+    padding-right: 20px;
+  }
+
+  .form-row textarea {
+    width: 50%;
+    max-width: 500px;
+  }
+
+  .form-row button {
+    margin-left: 140px;
+  }
+}
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+  .navigation-list {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #70ff8b;
+    top: 70px;
+    left: 100%;
+    margin: 0;
+    padding: 0;
+    transition: all 0.5s;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navigation-list li {
+    margin: 40px 0;
+  }
+
+  anchor-li-navigation-list {
+    font-size: 20px;
+  }
+
+  .checkbtn {
+    display: block;
+    transition: all 0.5s;
+  }
+
+  #check:checked ~ .navigation-list {
+    left: 0%;
+  }
+
+  #check:checked ~ .checkbtn {
+    font-size: 30px;
+  }
+
+  .index-icon-anchor {
+    padding-left: 20px;
+  }
+
+  .navigation-bar {
+    padding-right: 20px;
+  }
+
+  .seccion-1 {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding-top: 0;
+  }
+
+  .acerca-de {
+    text-align: center;
+  }
+
+  .acerca-imagen {
+    max-width: 350px;
+    width: 70vw;
+    height: auto;
+  }
+
+  .acerca-imagen img {
+    max-width: 350px;
+    width: 70vw;
+    height: auto;
+  }
+
+  .seccion-2 {
+    display: flex;
+    overflow: hidden;
+    max-height: 400px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .seccion-2 img {
+    width: 120%;
+  }
+
+  .seccion-tarjetas {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+
+  .grupo-tarjetas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tarjeta-trabajo {
+    background-color: #8bc484;
+    border-radius: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 15px 0;
+    justify-content: center;
+  }
+
+  .img-tarjeta {
+    width: 90%;
+    padding-top: 4vw;
+    border-radius: 10px;
+  }
+
+  .img-tarjeta img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .footer-title {
+    width: 85%;
+  }
+
+  .footer-list {
+    width: 85%;
+  }
+}
