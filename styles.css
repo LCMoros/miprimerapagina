@@ -247,6 +247,12 @@ footer {
   background-color: #407fc7;
 }
 
+.greeting {
+  padding: 20px 15%;
+  text-align: justify;
+  font-size: 20px;
+}
+
 /* ------------- Para Pantallas de más de 700px ------------- */
 @media only screen and (min-width: 700px) {
   .form-row {
